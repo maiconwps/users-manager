@@ -13,7 +13,7 @@ body{
     justify-content: center;
     height:  max(80vh, 300px);
     border: solid 3px white;
-    width: max(40vw, 300px) ;
+    width: clamp(300px, 40vw, 30%) ;
     padding: 1.5rem 0.75rem;
     border-radius: 3%;
     background-color: rgba(255, 255, 255, 0.3);
@@ -37,12 +37,12 @@ body{
 }
 
 button[name=add-user]{
-    background-color: rgba(255, 255, 255, 0.289);
+    background-color: rgba(57, 154, 245, 0.782);
     border-radius: 0.3rem;
-    color: blue;
+    color: white;
     width: 6rem;
     padding: 0.25rem 0.5rem;
-    border: solid 1px white;
+    border: solid 1px blue;
     align-self: flex-end;
     box-sizing: border-box;
     margin-right: 0.45rem;

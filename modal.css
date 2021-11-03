@@ -1,23 +1,26 @@
 .modal{
-    opacity: 0;
-    position: absolute;
-    z-index: -1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 3%;
+
+    opacity: 0;
+    height: 70vh;
+    width: min(80vw, 400px);
     background-color: white;
+    border-radius: 3%;
     border: solid 3px rgb(59, 128, 218);
     padding: 1rem 0;
-    
+
+    position: absolute;
+    top: calc(50% - 35vh);
+    z-index: -1;
+
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
 }
 
 .modal.--openned{
-    height: 70vh;
-    opacity: 0;
-    width: min(80vw, 400px);
-    top: calc(50% - 35vh);
     opacity: 1;
     z-index: 1;
 }
