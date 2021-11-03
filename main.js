@@ -98,7 +98,7 @@ function openModalEdit(userData, userItem){
             "fail": () => {
                 console.log("Cancelado")
             },
-            "title": "Editar usuário",
+            "title": "Edição de usuário",
             "labelButtonSubmit": "Editar",
             "initialValues": userData
         }
