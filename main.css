@@ -1,0 +1,158 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 15px;
+    background-image: linear-gradient(45deg, #8DEBFF, #6CACFF) ;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:  max(80vh, 300px);
+    border: solid 3px white;
+    width: max(40vw, 300px) ;
+    padding: 1.5rem 0.75rem;
+    border-radius: 3%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.container section{
+    width: 100%;
+    height: 100%;
+}
+
+.container header{
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    justify-content: space-around;
+}
+
+.container header h2{
+    color: rgb(56, 56, 225);
+    text-align: center;
+}
+
+button[name=add-user]{
+    background-color: rgba(255, 255, 255, 0.289);
+    border-radius: 0.3rem;
+    color: blue;
+    width: 6rem;
+    padding: 0.25rem 0.5rem;
+    border: solid 1px white;
+    align-self: flex-end;
+    box-sizing: border-box;
+    margin-right: 0.45rem;
+}
+
+button[name=add-user] span{
+    margin: 0 0.2rem;
+}
+
+button[name=add-user]:hover{
+    background-color: rgba(16, 205, 238, 0.289);
+    color: blue;
+    border: solid 1px blue;
+
+}
+
+ul[name=users]{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    height: 75%;
+    overflow-y: scroll;
+    padding: 0 1rem;
+    margin-left: calc(-0.75rem - 4px);
+}
+
+ul[name=users] span.info{
+    align-self: center;
+    color: rgb(48, 43, 43);
+    font-weight: 600;
+    margin-top: 3rem;
+}
+
+ul[name=users] li+span.info{
+    display: none;
+}
+
+ul[name=users] .userItem{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 5px;
+    margin-bottom: 3px;
+    background-color: white;
+    overflow-y: visible;
+    overflow-x: visible;
+    transition-duration: 0.2s;
+    color: rgb(99, 97, 97);
+    align-items: center;
+}
+
+.userItem span > span{
+    margin: 0 0.2rem;
+}
+
+.userItem .btn{
+    color:gray;
+    border: none;
+    background-color: transparent;
+}
+
+ul[name=users] .userItem:hover{
+    color: black;
+    transform: scale(1.03);
+}
+
+.userItem:hover .btn.delete{
+    color:gray;
+    border: none;
+    color: red;
+    background-color: transparent;
+}
+
+
+.userItem .btn.delete:hover{
+    background-color: rgba(255, 0, 0, 0.2);
+    border: 1px solid red ;
+    border-radius: 10%;
+    color: red;
+}
+
+
+/* .userItem:hover .btn.view{
+    color:gray;
+    border: none;
+    color: green;
+    background-color: transparent;
+}
+
+
+.userItem .btn.view:hover{
+    background-color: rgba(0, 128, 0, 0.261);
+    border: 1px solid green ;
+    border-radius: 10%;
+    color: green;
+} */
+
+.userItem:hover .btn.edit{
+    color:gray;
+    border: none;
+    color: blue;
+    background-color: transparent;
+}
+
+
+.userItem .btn.edit:hover{
+    background-color: rgba(0, 0, 255, 0.254);
+    border: 1px solid blue ;
+    border-radius: 10%;
+    color: blue;
+}

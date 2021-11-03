@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de usuários</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="modal.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+        <section>
+            <header>
+                <h2>Gerenciamento de Usuários</h2>
+                <button type="button" name="add-user"><span class="material-icons-outlined">add</span>Adicionar</button>
+            </header>
+            <ul name="users" class="scroll-primary">
+                <span class="info users-empty"> Sem usuários cadastrados! <br>
+                        Adicione um usuário à lista.</span>
+            </ul>
+        </section>
+
+        <article class="modal" >
+            <header>
+                <h1>Cadastro</h1>
+            </header>
+            <form>
+                <section class="form-inputs">
+                    
+                    <input type="text" name="name" placeholder="maicon" required>
+                    <label>Nome</label>
+
+                    <input type="email" name="email" placeholder="user@gmail.com" required>
+                    <label>Email</label>
+
+                    <input type="tel" name="phone" placeholder="(99) 99999-9999">
+                    <label>Telefone</label>
+
+                    <input type="date" name="date" placeholder="22/05/1029">
+                    <label>Data de nascimento</label>
+
+                </section>
+                <section class="form-buttons">
+                    <button type="submit" name="submit">Cadastrar</button>
+                    <button type="reset" name="cancel">Cancelar</button>
+                </section>
+            </form>
+        </article>
+    </main>
+</body>
+
+</html>

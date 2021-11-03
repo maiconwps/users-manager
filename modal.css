@@ -1,0 +1,118 @@
+.modal{
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3%;
+    background-color: white;
+    border: solid 3px rgb(59, 128, 218);
+    padding: 1rem 0;
+    
+}
+
+.modal.--openned{
+    height: 70vh;
+    opacity: 0;
+    width: min(80vw, 400px);
+    top: calc(50% - 35vh);
+    opacity: 1;
+    z-index: 1;
+}
+.modal header{
+    height: 15%;
+}
+
+.modal header h1{
+    vertical-align: middle;
+    color: rgb(56, 56, 225);
+} 
+
+.modal form{
+    width: 70%;
+    height: 85%;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal .form-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.modal .form-inputs label{
+    align-self: flex-start;
+    font-size: 0.75rem;
+    color: black;
+    position: relative;
+    top: -4rem;
+}
+
+.modal .form-inputs input{
+   padding: 0.2rem;
+   height: 1.2rem;
+   margin-top: 0.2rem;
+   margin-bottom: 1.5rem;
+   width: 100%;
+   border-width: 0 0 1px 0;
+   border-color: gray;
+}
+
+.modal .form-inputs input:not(:placeholder-shown)+label{
+    color: grey;
+}
+
+.modal .form-inputs input:focus-visible{
+    outline-width: 0;
+    border-color: blue;
+    background-color: rgba(0, 0, 255, 0.1);
+    border-bottom-width: 1.5px;
+}
+
+.modal .form-inputs input:focus-visible+label{
+    color: blue !important;
+}
+
+.modal .form-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.modal .form-buttons button{
+   padding: 0.5rem 0.75rem;
+   border-radius: 5%;
+   width: 5rem;
+}
+
+.form-buttons button[name=submit]{
+    background-color: white;
+    border: solid 1px blue;
+    color: blue;
+ }
+
+ .form-buttons button[name=submit]:hover{
+    background-color: rgba(0, 0, 255, 0.433);
+    border-width: 1.2px;
+    color: white;
+ }
+
+ .form-buttons button[name=cancel]{
+    background-color: white;
+    border: solid 1px gray;
+    color: #444;
+ }
+
+ .form-buttons button[name=cancel]:hover{
+    background-color: rgba(0, 0, 0, 0.234);
+    border-width: 1.2px;
+    color: white;
+ }
+
+

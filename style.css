@@ -1,0 +1,29 @@
+html, body, ul, section, main{
+    padding: 0;
+    margin: 0;
+}
+
+.scroll-primary{
+    scrollbar-width: thin;
+    scrollbar-color: blue;
+}
+
+.scroll-primary::-webkit-scrollbar {
+    width: 4px;
+}
+
+.scroll-primary::-webkit-scrollbar-track {
+    background: rgba(0, 0, 255, 0.2);
+    border-radius: 15%;
+}
+
+.scroll-primary::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 25%;
+}
+
+.material-icons-outlined {
+    display: inline-flex;
+    font-size: inherit !important;
+    vertical-align: top !important;
+}
